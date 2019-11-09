@@ -57,7 +57,7 @@
 											<style>
 												.font_bk{border:2px solid #ccc;}
 												</style>
-												<h3 align="left"><span class="font_bk">Q</span></h3>
+												<h3 align="left"><span class="font_bk">QPI of STM image</span></h3>
 											<center>
 											<img src="../images/QPI.jpg"  width="600",height="300"/></center>
 											
@@ -74,17 +74,18 @@
 												mapping and yields the power spectrum. But when it comes to reality, further treatments are needed 
 												in order to increase the signal-to-noise ratio and improve the quality of the image.</p>
 
-                                                <p>Firstly, we correct local distortions due to thermal drift and piezoelectric hysteresis by making 
+                                                <p style="color:black">Firstly, we correct local distortions due to thermal drift and piezoelectric hysteresis by making 
 												use of the simultaneously derived real-space topography data, based on Lawler-Fujita algorithm
 												(引用文献2010 nature). Secondly, after Fourier transformation of the mapping, a spatial filtering 
 												is needed to suppress the high signal near the center. Lastly, all FFT images are four-fold symmetrized 
 												to further reduce the noise, according to the C4 symmetry of FeSe crystal structure.
 
-Upon application of Lawler-Fujita algorithm, the Bragg peaks, along with other peaks associated with modulation commensurate with the lattice, collapse to a single pixel with enhanced brightness, whereas other peaks related to environmental noise broaden. Therefore, we can differentiate between intrinsic characteristics of the sample and external noise.(从这里开始引？？)
+                                                <p style="color:black">Upon application of Lawler-Fujita algorithm, the Bragg peaks, along with other peaks associated with 
+												modulation commensurate with the lattice, collapse to a single pixel with enhanced brightness, whereas 
+												other peaks related to environmental noise broaden. Therefore, we can differentiate between intrinsic 
+												characteristics of the sample and external noise.</p>
 
-Later on, a new algorithm that performs unit-cell averaging and allows sub-unit-cell resolution was proposed. I will refer to it as MAUC (make average unit cell). The core of MAUC is to make use of many unit cells in a large FOV, average, and build up a weighted histogram at each sub-unit-cell position in the average unit cell. The method can be easily extended to be applied to a ‘supercell’ of any size.
-It should be pointed out that since MAUC is based on drift-corrected data, choice of parameters in the drift-correction process might influence the average unit cell result. Actually, a detailed, systematic study has been carried out in ref.(phd thesis). Care should be taken whenever we do background subtraction, choose the length scale over which to extract the local drift, remove bad pixels, choose the Q vector to drift-correct raw data onto, and etc.
-</p>
+
 												
 											
 										</article>
